@@ -1,4 +1,5 @@
 #Create a basic calculator GUI
+import math
 
 class Calculator:
 #Value1 will be first instance, value2 will be second
@@ -18,3 +19,9 @@ class Calculator:
 
     def divide (self):
         return ((self.value1/self.value2) + (self.value1%self.value2))
+
+    def Exponentiate (self):
+        return math.pow(self.value1, self.value2)
+    
+    def log10 (self):
+        return math.log10(self.value1)
